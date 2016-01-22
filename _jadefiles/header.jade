@@ -1,0 +1,23 @@
+mixin nav-content()
+	ul
+		li: a(href="#Start") Starts
+		li: a(href="#Videos") Videos
+		li: a(href="#Karte") Karte
+		li: a(href="#Charts") Charts
+		li: a(href="#Interaktiv") Interaktiv
+		li: a(href="#Quelle") Quelle
+
+.mobile-nav.is-open
+	+nav-content()
+
+
+header
+	.header-position 
+		h1.logo RP Logo
+
+		nav.site-nav
+			+nav-content()
+
+		a(href="mailto:rponline@xxx.com").email-link +email me
+
+		.mobile-nav-toggle: span
