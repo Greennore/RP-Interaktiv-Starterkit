@@ -31,12 +31,12 @@
 // columns
 .col-1
 	max-width: 300px
-	margin-bottom: 0 10px
+	margin: 0 15px
 	//background: pink
 
 .col-2
 	max-width: 620px
-	margin: 0 10px
+	margin: 0 15px
 	//background: honeydew
 
 .col-50
@@ -48,23 +48,30 @@
 	margin-right: 15px
 
 @media (max-width: 640px)
-	.home-sections  .flex
+	.home-sections .flex
 		display: block
 
 	.col-1
 		max-width: 100%
 
+
 	.col-50
 		width: auto
 
 	.push-right // add in the right column
-	margin-left: auto
+	//margin-left: auto
 
 // Typography
 
 .home-lead
 	font-size: 36px
 	line-height: 1.2
+
+	&.outdented
+		text-indent: -1em //textverrueckung auf einer Zeile
+
+		@media (max-width: 640px)
+			text-indent: 0
 
 
 

@@ -665,6 +665,15 @@ section.start {
   section.start .home-lead {
     font-size: 20px; } }
 
+section.start.text {
+  background: white; }
+
+section.video {
+  background-image: url(../img/vid-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -709,11 +718,11 @@ section.start {
 
 .col-1 {
   max-width: 300px;
-  margin-bottom: 0 10px; }
+  margin: 0 15px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px; }
+  margin: 0 15px; }
 
 .col-50 {
   width: 50%; }
@@ -728,9 +737,13 @@ section.start {
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; }
-  margin-left: auto; }
+    width: auto; } }
 
 .home-lead {
   font-size: 36px;
   line-height: 1.2; }
+  .home-lead.outdented {
+    text-indent: -1em; }
+    @media (max-width: 640px) {
+      .home-lead.outdented {
+        text-indent: 0; } }
