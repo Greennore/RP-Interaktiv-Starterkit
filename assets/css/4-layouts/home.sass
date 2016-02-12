@@ -16,11 +16,12 @@
 	// Flex Classes
 	.flex
 		display: flex
-		flex-direction: rows
+		//flex-direction: rows
 
 
 	.flex--center
 		justify-content: center
+
 
 	.flex--space-around
 		justify-content: space-around
@@ -33,37 +34,32 @@
 	width: 320px
 	padding: 0 10px
 	box-sizing: border-box
-	//margin: 0 15px //was differnt in the video
 
-	//background: pink
+	.push-right
+		margin-left: 330px
 
 .col-2
-	max-width: 620px
-	margin: 0 15px
-	//background: honeydew
+	max-width: 640px
+	padding: 0 10px
+	box-sizing: border-box
+	width: 100%
 
 .col-50
 	width: 50%
-	//background: yellow
 
-.push-right // add in the right column
-	margin-left: 15px
-	margin-right: 15px
+
+
 
 @media (max-width: 640px)
 	.home-sections .flex
 		display: block
-
 	.col-1
-		max-width: 100%
-
-
-
+		width: 100% //fehler -> max-width
 	.col-50
 		width: auto
+	.push-right
+		margin-left: 0
 
-	.push-right // add in the right column
-	//margin-left: auto
 
 // Typography
 
@@ -72,7 +68,7 @@
 	line-height: 1.2
 
 	&.outdented
-		text-indent: -1em //textverrueckung auf einer Zeile
+		text-indent: -0.8em //textverrueckung auf einer Zeile
 
 		@media (max-width: 640px)
 			text-indent: 0
