@@ -756,6 +756,13 @@ section.video {
         section.video .col-1:last-child {
           padding: 20px 20px 10px; } }
 
+section.video.text {
+  background: white; }
+
+#map {
+  height: 500px;
+  width: auto; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
