@@ -6,8 +6,17 @@ $(function () {
                 zoomType: 'x'
             },
             title: {
-                text: 'Test Chart'
+                text: 'Test Chart',
+                style: {
+	                 fontFamily: '"Fira Sans", sans-serif', // default font
+	                  fontSize: '25px'
+                  }
+
             },
+            credits: {
+                enabled: false
+            },
+
             subtitle: {
                 text: document.ontouchstart === undefined ?
                         'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
@@ -17,7 +26,7 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'Exchange rate'
+                    text: 'Düsseldorf Exchange rate'
                 }
             },
             legend: {

@@ -759,9 +759,6 @@ section.video {
 section.video.text {
   background: white; }
 
-section.video.text {
-  background: white; }
-
 #map {
   height: 500px;
   width: auto; }
@@ -793,8 +790,15 @@ section.video.text {
 
 #chart {
   height: 500px;
-  width: auto;
-  background-color: pink; }
+  width: auto; }
+
+@media (max-width: 400px) {
+  #chart {
+    height: 300px;
+    width: auto; } }
+
+section.chart.text {
+  background: white; }
 
 .home-wrap {
   display: -webkit-box;
